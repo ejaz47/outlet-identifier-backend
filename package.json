@@ -1,0 +1,21 @@
+{
+  "name": "ejaz-node-angular",
+  "main": "server.js",
+  "dependencies": {
+    "@mapbox/togeojson": "^0.16.0",
+    "assert": "^1.4.1",
+    "async": "^2.6.2",
+    "body-parser": "^1.18.3",
+    "canvas": "^2.3.1",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.1",
+    "jsonwebtoken": "^8.5.0",
+    "method-override": "^3.0.0",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "node-cmd": "^3.0.0",
+    "node-geocoder": "^3.23.0",
+    "point-in-polygon": "^1.0.1",
+    "xmldom": "^0.1.27"
+  }
+}
