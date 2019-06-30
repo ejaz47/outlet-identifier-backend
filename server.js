@@ -8,7 +8,7 @@ const tj = require('@mapbox/togeojson');
 const DOMParser = require('xmldom').DOMParser;
 const fs = require('fs');
 const dotenv = require('dotenv');
-
+const cors = require('cors');
 const app = express();
 const outlet = require('./app/outlet'); // Imports routes for the products
 
@@ -32,6 +32,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 
+app.use(cors());
 
 
 //Using routers from multiple files and folders
