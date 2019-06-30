@@ -16,7 +16,7 @@ const outlet = require('./app/outlet'); // Imports routes for the products
 dotenv.config({path: '.env'});
 console.log(process.env.GOOGLE_API_KEY);
 //For the purpose I'm parsing this file on app init, 
-// other wise it will be parse by some event like kml file change event
+// otherwise it will be parsed by some event like kml file change event
 var kml = new DOMParser().parseFromString(fs.readFileSync('DeliveryAreas.kml', 'utf8'));
 global.parsedKML = tj.kml(kml);
 
